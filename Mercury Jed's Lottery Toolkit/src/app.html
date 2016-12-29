@@ -1,3 +1,13 @@
 <template>
-  <h1>${message}</h1>
+  <div class="header">
+    <h1>Mercury Jed's Lottery Toolkit!</h1>
+    <p>This tool is a text to number value converter.</p>
+    <p>It sums up the numerical value of each character in the text.</p>
+    <p>Special characters and spaces are ignored.</p>
+  </div>
+
+  <div class="text-value">Text value = ${textValue}</div>
+  <div class="text-input">
+    <input type="text" value.bind="textInput" placeholder="Enter text here...">
+  </div>
 </template>
