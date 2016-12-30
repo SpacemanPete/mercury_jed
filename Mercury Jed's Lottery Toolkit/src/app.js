@@ -33,7 +33,6 @@ export class App {
       'z': 26
     };
     
-    // test
     /* Functionally expressed with es5 function syntax
      *
      * return this.textInput.split('').filter(function(char){
