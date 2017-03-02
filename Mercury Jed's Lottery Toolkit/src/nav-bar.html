@@ -1,0 +1,12 @@
+<template bindable="router">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Mercury Jed's Lottery Toolkit</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
+        <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href.bind="row.href">${row.title}</a>
+      </li>
+    </ul>
+  </nav>
+</template>

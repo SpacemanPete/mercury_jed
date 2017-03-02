@@ -1,0 +1,15 @@
+<template>
+  <section id="intro" class="wrapper style1 fullscreen fade-up">
+    <div class="inner">
+      <h1>Text to Number Value Convertor</h1>
+      <p>This tool is a text to number value converter. It sums up the numerical value of each character in the text. Special characters and spaces are ignored.</p>
+      <div class="text-value">
+        <p>Text Numerical value = </p>
+        <p id="num-value">${textValue}</p>
+      </div>
+      <div class="text-input">
+        <textarea rows="4" cols="10" type="text" value.bind="textInput" placeholder="Enter text here..."></textarea>
+      </div>
+    </div>
+  </section>
+</template>

@@ -1,13 +1,16 @@
 <template>
-  <div class="header">
-    <h1>Mercury Jed's Lottery Toolkit!</h1>
-    <p>This tool is a text to number value converter.</p>
-    <p>It sums up the numerical value of each character in the text.</p>
-    <p>Special characters and spaces are ignored.</p>
-  </div>
+  <require from="nav-bar.html"></require>
+  <require from="footer.html"></require>
+  <!--<require from="bootstrap/css/bootstrap.css"></require>-->
 
-  <div class="text-value">Text value = ${textValue}</div>
-  <div class="text-input">
-    <input type="text" value.bind="textInput" placeholder="Enter text here...">
+  <section id="sidebar">
+    <div class="inner">
+      <nav-bar router.bind="router"></nav-bar>
+    </div>
+  </section>
+
+  <div id="wrapper">
+    <router-view></router-view>
   </div>
+  <compose view="./footer.html"></compose>
 </template>
